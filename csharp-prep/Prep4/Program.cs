@@ -61,5 +61,16 @@ class Program
             }
         }
         Console.WriteLine($"The max is: {max}");
+
+        //Find min
+        int min = numbers[0];
+        foreach (int number in numbers)
+        {
+            if (number<min)
+            {
+                min = number;
+            }
+        }
+        Console.WriteLine($"The smallest number is: {min}");
     }
 }
