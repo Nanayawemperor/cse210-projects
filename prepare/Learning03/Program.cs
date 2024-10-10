@@ -4,20 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Fraction f1 = new Fraction();
-        Console.WriteLine(f1.GetFractionString());
-        Console.WriteLine(f1.GetDecimalValue());
+        Person p1 = new Person();
+        Person p2 = new Person("Emmanuel","Okyere");
+        Person p3 = new Person("Mr.","Emmanuel","Okyere");
 
-        Fraction f2 = new Fraction(5);
-        Console.WriteLine(f2.GetFractionString());
-        Console.WriteLine(f2.GetDecimalValue());
-
-        Fraction f3 = new Fraction(3, 4);
-        Console.WriteLine(f3.GetFractionString());
-        Console.WriteLine(f3.GetDecimalValue());
-
-        Fraction f4 = new Fraction(1, 3);
-        Console.WriteLine(f4.GetFractionString());
-        Console.WriteLine(f4.GetDecimalValue());
+        Console.WriteLine(p3.GetFullName());
     }
 }
