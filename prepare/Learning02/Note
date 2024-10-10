@@ -1,0 +1,20 @@
+Class: Resume
+
+Attributes:
+* _name : string
+* _jobs : List<Job>
+
+Methods :
+* Display(): void
+
+
+Class : Job
+Attributes:
+* _companyName : string
+* _jobTitle : string
+* _startYear : string
+* _endYear : string
+
+Methods :
+* Display() : void
+

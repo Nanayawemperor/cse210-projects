@@ -1,16 +1,31 @@
 using System;
+using System.Reflection.Metadata;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("What is your first name? ");
-        string f_name = Console.ReadLine();
+        Person myName = new Person();
+        myName._familyName = "Emmanuel";
+        myName._givenName = "Okyere";
+        myName.ShowEasternName();
+        myName.ShowWesternName();
 
-        Console.Write("What is your last name? ");
-        string l_name = Console.ReadLine();
+        Blind kitchen = new Blind();
+        kitchen._width = 60;
+        kitchen._color = "white";
+        kitchen._height = 48;
+        Console.WriteLine(kitchen._color);
+        Console.WriteLine($"Area of the kitchen is {kitchen.GetArea()}");
+        
+        Blind livingRoom = new Blind();
+        livingRoom._height = 52;
+        livingRoom._width = 72;
+        livingRoom._color = "Blue";
+        Console.WriteLine(livingRoom.GetArea());
 
-        Console.WriteLine("");
-        Console.WriteLine($"Your name is {l_name}, {f_name} {l_name}.");
+
     }
+    
 }
+
