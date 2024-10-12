@@ -1,0 +1,17 @@
+Class : fraction
+Attributes :
+* _top : int
+*_bottom : int
+Methods : 
+*Fraction(): void
+*Fraction(wholeNumber : int)
+*Fraction(top: int,botom : int)
+
+Getters and Setters:
+*GetTop()
+SetTop(top:int)
+GetBottom()
+SetBottom(bottom : int)
+
+GetFraction():string
+GetDecimal(): double

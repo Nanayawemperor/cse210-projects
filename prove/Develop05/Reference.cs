@@ -1,4 +1,4 @@
-public class _Reference
+class _Reference
 {
     //variables in this class
     //_book : string

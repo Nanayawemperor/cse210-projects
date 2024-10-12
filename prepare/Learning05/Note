@@ -1,0 +1,15 @@
+Class : Scripture
+
+Attributes : 
+* _reference : string
+* _memoryText : string
+
+Methods :
+* 
+
+
+Class : Reference
+Attributes : 
+* _book : string
+* _chapter : int
+* _verse : int
