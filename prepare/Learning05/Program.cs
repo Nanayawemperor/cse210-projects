@@ -12,5 +12,13 @@ class Program
         {
             Console.WriteLine("Press enter to continue or type 'quit' to finish: ");
         }
+
+        List<Player> _players = new List<Player>();
+
     }
+}
+
+class Player
+{
+
 }

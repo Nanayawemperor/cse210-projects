@@ -1,25 +1,20 @@
 using System;
-using System.Security.Cryptography.X509Certificates;
-
 class Scripture
 {
     private Reference _reference;
-    private List<Word> _words;
+    private List<Word> _words = new List<Word>();
 
     public Scripture(Reference Reference, string text)
     {
         _reference = Reference;
-        List<Word> words = new List<Word>();
+        _words = text;
     }
 
     public void HideRandomWords(int numberToHide)
     {
-        if (numberToHide > 0)
-        {
-            Console.Clear();
-        }
 
     }
+
     public string GetDisplayText()
     {
         return " ";
@@ -28,4 +23,5 @@ class Scripture
     {
         return true;
     }
+
 }
