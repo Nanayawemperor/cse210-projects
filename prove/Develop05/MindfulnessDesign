@@ -10,7 +10,6 @@ Constructor :
 Behaviors : 
 *DisplayStartingMessage() : void
 *DisplayEndingMessage() : void
-*ShowSpinner(seconds : int) : void
 *ShowCountDown(seconds : int) : void
 
 Derived Class : BreatingActivity
@@ -29,8 +28,8 @@ Constructor:
 *ListingActivity()
 
 Behavior:
-*GetRandomPrompt() : void
-*GetListFromUser() : List<string>
+*Run() : void
+
 
 Derived Class : ReflectingActivity
 Attributes: 
@@ -42,7 +41,3 @@ constructor:
 
 Behaviors:
 *Run() : void
-*GetRandomPrompt() : string
-*GetRandomQuestion() : string
-*DisplayPrompt() : void
-*DisplayQuestions() : void

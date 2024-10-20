@@ -12,8 +12,3 @@ class Program
         Console.Write("-"); // Replace it with the - character
     }
 }
-
-class Player
-{
-
-}

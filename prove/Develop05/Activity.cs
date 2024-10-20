@@ -19,7 +19,7 @@ public abstract class Activity
         Console.Write("How long, in seconds, would you like for your session? ");
         _duration = int.Parse(Console.ReadLine());
 
-        Console.WriteLine("Get ready to begin...");
+        Console.WriteLine("Get ready...");
         ShowCountDown(3);
 
         Run();
@@ -31,8 +31,7 @@ public abstract class Activity
 
     private void DisplayEndingMessage()
     {
-        Console.WriteLine("Well done");
-        Console.WriteLine(" ");
+        Console.WriteLine("Well done!!");
         Console.WriteLine($"You have completed another {_duration} seconds of the {_name}.");
         ShowCountDown(3);
     }
