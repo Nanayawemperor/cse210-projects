@@ -1,0 +1,66 @@
+//Design of Customer Class
+Class : Customer
+Attributes:
+*_name : string
+*CustomerAddress : Address
+
+Constructors:
+*GetName : string
+*GetAddress : string
+*Customer(name: string, address : Address)
+
+Behaviors:
+*IsInUSA() : bool
+*GetCustomerDetails() : string
+
+//Design of Address Class
+Class : Address
+Attributes: 
+*_street : string
+*_city : string
+*_state : string
+*_country : string
+
+Constructors:
+*Address()
+*Address(street : string, city : string, state : string, country: string)
+
+Behaviors:
+*IsCountryUSA() : bool
+*DisplayAddress() : string
+
+//Design of Product Class
+Class : Product
+Attributes:
+*_productName : string
+*_productId : int
+*_price : int
+*_quantity : int
+
+Constructors:
+*Product()
+*Product(name : string, productId : int, price : int, quantity : int)
+
+Behaviors:
+*GetTotalCost() : int
+*ProductDetails() : string
+
+//Design of Order Class
+Class : Order
+Attributes:
+*products : List<Procduct>
+*_customer : Customer
+*_shippingCostUSA : double
+*_shippingCostNotUSA : double
+
+Constructors:
+*Order(customer : Customer)
+
+Behaviors:
+*AddProduct(product : Product)
+*TotalCost : double
+*GetPackingLabel() : string
+*GetShippingLabel() : string
+
+
+

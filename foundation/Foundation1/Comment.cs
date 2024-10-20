@@ -16,17 +16,5 @@ public class Comment
     {
         _person = person;
         _text = comments;
-    }
-    
-    //behaviors
-    public string GetCommentDetails()
-    {
-        return _person + " : " + _text;
-    }
-    public string GetComment()
-    {
-        return _text;
-    }
-
-    
+    } 
 }

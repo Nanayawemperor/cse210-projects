@@ -1,0 +1,25 @@
+//Design of Comment Class
+Class : Comment 
+Attributes:
+*_person : string
+*_text : string
+
+Constructors:
+Comment()
+Comment(person : string, text : string)
+
+//Design of Video Class
+Class : Video
+Attributes:
+*_title : string
+*_author : string
+*_length : int
+*comments : List<Comment>
+
+Constructors:
+*Video(title : string, author : string, length : int)
+
+Behaviors:
+*AddComment(comment : Comment) : void
+*GetNumberOfComments() : int
+*GetComments() : List<Comment>
