@@ -1,0 +1,48 @@
+Base Class : Activity
+Attributes:
+*_name : string
+*_description : string
+*_duration : int
+
+Constructor :
+*Activity(name : string, description : string)
+
+Behaviors : 
+*DisplayStartingMessage() : void
+*DisplayEndingMessage() : void
+*ShowSpinner(seconds : int) : void
+*ShowCountDown(seconds : int) : void
+
+Derived Class : BreatingActivity
+Constructor:
+*BreathingActivity()
+
+Behavior:
+*Run() : void
+
+Derived Class : ListingActivity
+Attributes:
+*_count : int
+*_prompts : List<string>
+
+Constructor:
+*ListingActivity()
+
+Behavior:
+*GetRandomPrompt() : void
+*GetListFromUser() : List<string>
+
+Derived Class : ReflectingActivity
+Attributes: 
+*_prompts : List<string>
+*_questions : List<string>
+
+constructor:
+*ReflectingActivity()
+
+Behaviors:
+*Run() : void
+*GetRandomPrompt() : string
+*GetRandomQuestion() : string
+*DisplayPrompt() : void
+*DisplayQuestions() : void

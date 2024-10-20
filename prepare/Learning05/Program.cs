@@ -4,17 +4,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Proverbs 3:5-6 Trust in the Lord with all thine heart and lean not unto thine own understanding; in all thy ways acknowledge Him, and he shall direct thy paths.");
-        Console.WriteLine(" ");
+        Console.Write("+");
 
-        string response = "yes";
-        while (response == "yes")
-        {
-            Console.WriteLine("Press enter to continue or type 'quit' to finish: ");
-        }
+        Thread.Sleep(2000);
 
-        List<Player> _players = new List<Player>();
-
+        Console.Write("\b \b"); // Erase the + character
+        Console.Write("-"); // Replace it with the - character
     }
 }
 

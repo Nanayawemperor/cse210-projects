@@ -1,43 +1,38 @@
 using System;
-using System.IO;
+public class Program
 {
-    public class program
+    public static void Main(string[]args)
     {
-        public static void Main(string[]args)
+        while(true)
         {
-            Console.Write("What Chapter should I remind you in psalms?: ");
-            int chapter = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Psalms " + chapter);
+            Console.WriteLine("Menu Options:");
+            Console.WriteLine("  1. Breathing Activity");
+            Console.WriteLine("  2. Reflection Activity");
+            Console.WriteLine("  3. Listing Activity");
+            Console.WriteLine("  4. Exit");
+            Console.Write("Select a choice from the menu: ");
 
-
-            //int _verse1;
-            Console.Write("Which verse is the starting point?:  ");
-            int verse = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"Psalms {verse} - ");
-
-            Console.Write("What is the ending point?: ");
-            verseEnd = int.parse(Console.ReadLine());
-            Console.WriteLine("Psalms", chapter + verse + verseEnd);
-            Console.Write("Copy and paste all its words here: ");
-            
-            string text = Console.Write("Paste text: ");
-            
-            
-            string book = @"C:\book.txt";
-            File.AppendAll Text(book,Environment.NewLine+ "  ");
-            string txtappd = File.ReadAllText(book);
-
-            string[]alines ={"First line","Second line","Third line"};
-            string docPath=Environment.GetFolderPath(Envirpnment.SpecialFolder.MyDocuments)
-            using (StreanWriter outputFile = new StreamWriter(path.Combine(docpath,"WriterLines.txt")));
+            int choice = int.Parse(Console.ReadLine());
+            Activity activity = null;
+            switch(choice)
             {
-                foreach(string line in lines)
-                    outputFile.WriteLine(line);
-
-                
+                  case 1:
+                    activity = new BreathingActivity();
+                    break;
+                case 2:
+                    activity = new ReflectingActivity();
+                    break;
+                case 3:
+                    activity = new ListingActivity();
+                    break;
+                case 4:
+                    return; 
             }
 
-
+            if (activity != null)
+            {
+                activity.DisplayStartingMessage();
+            }
         }
     }
-}     
+}
