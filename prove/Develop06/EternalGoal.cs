@@ -7,12 +7,11 @@ public class EternalGoal : Goal
 
     public override void RecordEvent()
     {
-        // No specific action for EternalGoal
     }
 
     public override bool IsComplete()
     {
-        return false; // Eternal goals are never complete
+        return false; 
     }
 
     public override string GetDetailsString()

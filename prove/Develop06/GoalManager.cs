@@ -5,7 +5,7 @@ public class GoalManager
 
     public void Start()
     {
-        // Implement game logic here, including displaying player info, listing goals, etc.
+        Console.WriteLine("Welcome to Eternal Quest! Manage your goals and earn points.");
     }
 
     public void CreateGoal()
