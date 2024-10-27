@@ -4,46 +4,39 @@ class Program
 {
     static void Main(string[] args)
     {
-        DisplayWelcomeMessage();
+        HourlyEmployee hEmployee = new HourlyEmployee();
+        hEmployee.SetName("Emmanuel");
+        hEmployee.SetId("1010");
+        hEmployee.SetAddress("Ghana");
+        hEmployee.SetBirthday("May 10");
+        hEmployee.SetPayRate(15);
+        hEmployee.SetHoursWorked(40);
 
-        string userName = PromptUserName();
-        int userNumber = PromptUserNumber();
+        SalaryEmployee sEmployee = new SalaryEmployee();
+        sEmployee.SetName("Emperor");
+        sEmployee.SetId("0101");
+        sEmployee.SetAddress("Ghana");
+        sEmployee.SetBirthday("July 10");
+        sEmployee.SetSalary(60000);
+        
+        DisplayEmployeeInfo(hEmployee);
+        DisplayEmployeeInfo(sEmployee);
 
-        int squaredNumber = SquareNumber(userNumber);
+        List<Employee> employees  = new List<Employee>();
+        employees.Add(hEmployee);
+        employees.Add(sEmployee);
 
-        DisplayResult(userName, squaredNumber);
+        foreach (Employee emp in employees)
+        {
+            float pay = emp.GetPay();
+        }
+
+
     }
 
-    static void DisplayWelcomeMessage()
+    public static void DisplayEmployeeInfo(Employee employee)
     {
-        Console.WriteLine("Welcome to the program!");
-    }
-
-    static string PromptUserName()
-    {
-        Console.Write("Please enter your name: ");
-        string name = Console.ReadLine();
-
-        return name;
-    }
-
-    static int PromptUserNumber()
-    {
-        Console.Write("Please enter your favorite number: ");
-        int number = int.Parse(Console.ReadLine());
-
-        return number;
-    }
-
-    static int SquareNumber(int number)
-    {
-        int square = number * number;
-        return square;
-    }
-
-    static void DisplayResult(string name, int square)
-    {
-        Console.WriteLine($"{name}, the square of your number is {square}");
-
+        float pay = employee.GetPay();
+        Console.WriteLine($"{employee.GetName()} will be paid ${pay}");
     }
 }
